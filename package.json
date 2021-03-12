@@ -1,0 +1,26 @@
+{
+    "name": "firrtl",
+    "displayName": "EasySoC FIRRTL",
+    "description": "FIRRTL Syntax Highlighting with the latest grammar support.",
+    "version": "1.0.0",
+    "publisher": "easysoc",
+    "engines": {
+        "vscode": "^1.54.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "firrtl",
+            "aliases": ["FIRRTL", "firrtl"],
+            "extensions": [".fir"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "firrtl",
+            "scopeName": "source.firrtl",
+            "path": "./syntaxes/firrtl.JSON-tmLanguage.json"
+        }]
+    }
+}
